@@ -16,3 +16,5 @@ fig, ax = plt.subplots
 ax.hist(titanic_data["Fare"])
 st.header("Histograma del Titanic")
 st.pyplot(fig)
+
+print('hola')
