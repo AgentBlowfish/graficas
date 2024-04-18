@@ -1,8 +1,12 @@
 # importamos la biblioteca streamlit
 import streamlit as st 
+import pandas as pd
 
 # creamos el titulo de la App
-st.title("Gracias por tu ayuda Saulo")
-st.header("Te dedico esta pagina web")
-st.write("Demo de sitio con graficas")
-st.write("Bottom Text")
+st.title("Titanic App")
+st.header("Titanic graphs")
+st.write("Gráficas del dataset Titanic")
+
+titanic_link = 'Titanic.csv'
+titanic_data = pd.read_csv(titanic_link)
+st.dataframe(titanic_data)
