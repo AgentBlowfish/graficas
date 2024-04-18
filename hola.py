@@ -2,6 +2,7 @@
 import streamlit as st 
 
 # creamos el titulo de la App
-st.title("Mi primera App")
-st.header("Demo App")
+st.title("Gracias por tu ayuda Saulo")
+st.header("Te dedico esta pagina web")
 st.write("Demo de sitio con graficas")
+st.write("Bottom Text")
