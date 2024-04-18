@@ -8,11 +8,11 @@ st.title("Titanic App")
 st.header("Titanic graphs")
 st.write("Gráficas del dataset Titanic")
 
-titanic_link = "Titanic.csv"
+titanic_link = "titanic.csv"
 titanic_data = pd.read_csv(titanic_link)
 st.dataframe(titanic_data)
 
-fig, ax = plt.subplots
+fig, ax = plt.subplots()
 ax.hist(titanic_data["Fare"])
 st.header("Histograma del Titanic")
 st.pyplot(fig)
